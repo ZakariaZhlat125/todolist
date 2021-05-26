@@ -17,12 +17,12 @@
 	    <div class="offset-md-2 col-lg-9">
 		    <form method="post" action="{% url 'todos:add' %}">
             {% csrf_token %}
-                <div class="form-row">
+                <div class="form-row add-items d-flex">
             	    <div class="col-md-6">
-        		    <input type=" text" class="form-control" name="title" placeholder="write here" required>
+        		    <input type=" text" class="form-control todo-list-input" name="title" placeholder="write here" required>
         	      </div>
         	     <div class="col-md-6">
-        		       <button type="submit" name="submit" class="btn btn-outline-primary">Add</button>
+        		       <button type="submit" name="submit" class="add btn font-weight-bold todo-list-add-btn btn-outline-primary">Add</button>
         	        </div>
                  </div>
             </form>
